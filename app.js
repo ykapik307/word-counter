@@ -27,9 +27,18 @@ wordCountBtn.addEventListener('click', () => {
 })
 charCountBtn.addEventListener('click', () => {
     let txt1 = input.value;
+    let p=0;
     let count1 = 0;
     b.style.opacity = 1;
-    count1 = txt1.length;
+     for(i=0;i<txt1.length;i++)
+     {
+        if(txt1.charAt(i)==" ")
+        {
+            p++;
+        }
+     }
+    count1 = txt1.length-p;
+    
     charres.innerHTML = count1;
 })
 ClearBtn.addEventListener('click', () => {
