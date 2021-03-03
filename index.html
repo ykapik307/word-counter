@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header"> Words Calculator</header>
+    <div class="container">
+        <form>
+            <textarea class="text-input" placeholder="Enter the Text"></textarea>
+        </form>
+        <div class="actions">
+            <button type="submit" class="word-count">Count Words</button>
+            <button type="button" class="char-count">Count Characters</button>
+            <button type="button" class="clear">Clear text</button>
+        </div>
+        <div class="results">
+            <p id="wordP">Words in the above text:<span class="wordRes"></span></p>
+            <p id="charP">Characters in the above text:<span class="charRes"></span></p>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
